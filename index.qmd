@@ -1,6 +1,5 @@
 ---
 title: "InfoSecSite"
-output-dir: docs 
 ---
 
 This is a Quarto website.
