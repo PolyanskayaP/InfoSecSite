@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>InfoSecSite - Positive Hack Days: Синтаксические (и лексические) анализаторы в современной разработке</title>
+<title>InfoSecSite - About</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,11 +80,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link active" href="./about.html" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Positive Hack Days: Синтаксические (и лексические) анализаторы в современной разработке</h1>
+<h1 class="title">About</h1>
 </div>
 
 
@@ -120,50 +120,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>В Парке Горького завершился киберфестиваль Positive Hack Days, в&nbsp;рамках которого гости узнали, как не стать жертвами мошенников на&nbsp;маркетплейсах, а также об особенностях ChatGPT, выборе безопасного VPN и других аспектах IT и ИБ.</p>
-<p>Одним из наиболее интересных на мой взгляд был доклад “<a href="https://phdays.com/broadcast/?tag=python-moscow&amp;talk=254">Синтаксические (и лексические) анализаторы в современной разработке</a>”. Основные тезисы представлены далее.</p>
-<p>Зачем нам анализировать пользовательский ввод?</p>
-<ol type="1">
-<li>Мы хотим давать пользователю подсказки на основе ввода</li>
-<li>Мы хотим подсвечивать синтаксические ошибки</li>
-<li>Мы хотим подсвечивать куски query на оптимизацию</li>
-</ol>
-<p>У каждого языка есть:</p>
-<ul>
-<li><p>Алфавит (набор символов)</p></li>
-<li><p>Правила составления выражений (грамматики)</p></li>
-</ul>
-<p>Синтаксические парсеры:</p>
-<ol type="1">
-<li><p>Инструменты, используемые для анализа и разбора текстов, составленных на естественных или формальных языках</p></li>
-<li><p>Используются для определения структуры языков и связей между элементами</p></li>
-</ol>
-<p>Задача: составление запросов в некую систему аналитики, т.е. вместо SQL-запросов писать:</p>
-<p><code>clients: 23.05</code></p>
-<p><code>cats: 2019-05-17</code></p>
-<p><code>orders: 2018</code></p>
-<p>Шаги получения:</p>
-<ol type="1">
-<li><p>Распарсить вход “clients: 23.05”</p></li>
-<li><p>Получить что-то</p></li>
-<li><p>Сгенерировать SQL</p></li>
-</ol>
-<p>Парсер-генераторы - библиотека для создания парсеров на основе заданной грамматики<br>
-Пример: Lark, Antlr, Ply</p>
-<p>Парсеры - программный код для синтаксического анализа конкретной грамматики<br>
-Пример: Xml, Yaml, Sqlparse, Sqlglot</p>
-<p><img src="2.jpg" class="img-fluid" width="311"> <img src="1.jpg" class="img-fluid" width="296"></p>
-<p>Выводы по поводу написания парсера:</p>
-<ul>
-<li><p>Готовое решение всегда выгоднее самописного, если его можно допилить</p></li>
-<li><p>Чем больше грамматика языка, тем больше размер проблемы, парсить разные диалекты DDL SQL - уже сложно</p></li>
-<li><p>Прежде чем выбирать библиотеку для генерации парсера - посмотрите внимательно, как выглядит определение грамматик, трансформеров AST и т.д.</p></li>
-<li><p>Кто будет после вас поддерживать этот парсер?<br>
-Выбирайте максимально понятный инструмент для генерации или оставляйте подробные инструкции</p></li>
-<li><p>AST - как результат работы парсера, всегда понятнее и проще в дальнейшей работе</p></li>
-<li><p>Если вам достаточно пары регулярок - пользуйтесь ими</p></li>
-<li><p>Если вам нужен SQL-парсер для определенного диалекта - посмотрите в открытом доступе ANTLR (LL) грамматики, возможно, или вы найдете нужную вам, или что-то будет проще дописать, чем писать с 0</p></li>
-</ul>
+<p>Сайт создан для выполнения практической работы №7 по threat hunting-у</p>
 
 
 

@@ -2,8 +2,4 @@
 title: "About"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+Сайт создан для выполнения практической работы №7 по threat hunting-у
