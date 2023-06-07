@@ -22,4 +22,4 @@ jobs:
         with:
           target: gh-pages
         env:
-          GITHUB_TOKEN: "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"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
