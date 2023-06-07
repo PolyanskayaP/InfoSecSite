@@ -22,4 +22,4 @@ jobs:
         with:
           target: gh-pages
         env:
-          GITHUB_TOKEN: ${{ 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 }}
+          GITHUB_TOKEN: ${{ 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 }}
